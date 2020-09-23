@@ -4,6 +4,7 @@ const humanReadable = (time) => {
     const SS = ('0' + Math.floor(time % 60)).slice(-2);
     return `${HH}:${MM}:${SS}`;
 };
+
 console.log(humanReadable(0), '00:00:00');
 console.log(humanReadable(5), '00:00:05');
 console.log(humanReadable(60), '00:01:00');
