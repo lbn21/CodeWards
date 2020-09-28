@@ -1,28 +1,4 @@
 function dirReduc(arr) {
-    if (!arr.length)
-        return arr;
-    const counterDirections = {
-        north: 'south',
-        south: 'north',
-        east: 'west',
-        west: 'east',
-    };
-    const directions = [];
-    directions.push(arr[0]);
-    for (let i = 1; i < arr.length; i++) {
-        const dir = arr[i];
-        if (directions.length &&
-            directions[directions.length - 1].toLowerCase() === counterDirections[dir.toLowerCase()]) {
-            directions.pop();
-            continue;
-        }
-        else {
-            directions.push(dir);
-        }
-    }
-    return directions;
-}
-function dirReduc(arr) {
     const opposite = {
         NORTH: 'SOUTH',
         SOUTH: 'NORTH',
