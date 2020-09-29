@@ -1,4 +1,5 @@
 {
   "presets": [["minify"]],
-  "plugins": ["transform-remove-console"]
+  "plugins": ["transform-remove-console"],
+  "comments": false
 }
