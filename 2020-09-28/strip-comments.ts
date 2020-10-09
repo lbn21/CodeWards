@@ -1,4 +1,4 @@
-function solution(input, markers) {
+function solutionA(input, markers) {
     // split string by new line
     const parts = input.split('\n');
     //store clean string
@@ -12,8 +12,8 @@ function solution(input, markers) {
 }
 
 console.log(
-    solution('apples, plums % and bananas\npears\noranges !applesauce', ['%', '!']),
+    solutionA('apples, plums % and bananas\npears\noranges !applesauce', ['%', '!']),
     'apples, plums\npears\noranges',
 );
-console.log(solution('Q @b\nu\ne -e f g', ['@', '-']), 'Q\nu\ne');
-console.log(solution('a #b\nc\nd $e f g', ['#', '$']), 'a\nc\nd');
+console.log(solutionA('Q @b\nu\ne -e f g', ['@', '-']), 'Q\nu\ne');
+console.log(solutionA('a #b\nc\nd $e f g', ['#', '$']), 'a\nc\nd');
